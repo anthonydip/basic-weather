@@ -10,12 +10,12 @@ import { NbThemeModule,
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { AppRoutingModule } from './app-routing.module';
 
-import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
