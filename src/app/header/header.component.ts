@@ -11,8 +11,8 @@ export class HeaderComponent implements OnInit {
   private currentUrl = 'https://www.weatherinnovations.com/coop/weather.json';
   weatherData: Data[] = [];
 
-  submit(url: string): void {
-    console.log(url);
+  onSubmit(url: string): void {
+    // console.log(url);
     this.currentUrl = url;
     this.fetchData();
   }
@@ -26,9 +26,6 @@ export class HeaderComponent implements OnInit {
 
   fetchData(): void {
     this.weatherService.fetchData(this.currentUrl)
-        .subscribe(res => {
-          console.log(res);
-        });
+        .subscribe(res => console.log("fetched data"));
   }
-
 }

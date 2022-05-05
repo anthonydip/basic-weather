@@ -13,11 +13,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { HeaderComponent } from './header/header.component';
+import { TableViewComponent } from './table-view/table-view.component';
+import { GraphViewComponent } from './graph-view/graph-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    TableViewComponent,
+    GraphViewComponent
   ],
   imports: [
     BrowserModule,
