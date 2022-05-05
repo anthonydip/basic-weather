@@ -1,9 +1,8 @@
 <div class="header">
     <span class="title">Weather App</span>
 
-    <div>
+    <form (ngSubmit)="submit(linkBox.value)">
         <span class="subtitle">JSON File</span>
-        <input type="text" class="search-box" placeholder="Enter JSON link..." nbInput>
-    </div>
-    
+        <input #linkBox type="text" class="search-box" placeholder="Enter JSON link..." value="https://www.weatherinnovations.com/coop/weather.json" nbInput>
+    </form>
 </div>

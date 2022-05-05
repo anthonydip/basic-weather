@@ -9,6 +9,8 @@ import { NbThemeModule,
 } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { HeaderComponent } from './header/header.component';
 
@@ -21,9 +23,11 @@ import { HeaderComponent } from './header/header.component';
     BrowserModule,
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'default' }),
+    FormsModule,
     NbLayoutModule,
     NbEvaIconsModule,
     NbInputModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
